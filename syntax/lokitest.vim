@@ -44,7 +44,7 @@ syn match number '[-+]\=\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
 syn match number '\d[[:digit:]]*\.\d*[eE][\-+]\=\d\+'
 
 syntax keyword version __LOKI_VERSION__
-syntax region string start="\"" end="\"" contains=version 
+syntax region string start=/\v"/ skip=/\v\\./ end=/\v"/ contains=version
 
 highlight link string String
 highlight link comment Comment
