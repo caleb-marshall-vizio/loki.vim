@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead */loki/tests/*.test setfiletype=lokitest
+autocmd BufNewFile,BufRead */loki/tests/*.test setfiletype lokitest
